@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cut Creators | Barbershop Services</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background-image: url("vecteezy_stylish-barber-backdrop-featuring-red-blue-and-gradient_58290154.jpg");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            color: #181818;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(17, 17, 17, 0.98);
+            padding: 32px 0 16px 0;
+            text-align: center;
+            border-bottom: 3px solid #e09b3d;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            color: #e09b3d;
+            margin: 0;
+            text-shadow: 0 2px 8px #232323;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-top: 8px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            list-style: none;
+            margin: 24px 0 0 0;
+            padding: 0;
+        }
+
+        .nav-btn {
+            background: linear-gradient(90deg,#e09b3d 40%,#1e3c72 100%);
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            border: none;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            display: inline-block;
+        }
+        .navbar li:nth-child(2) .nav-btn {
+            background: linear-gradient(90deg,#1e3c72 40%,#e09b3d 100%);
+        }
+        .navbar li:nth-child(3) .nav-btn {
+            background: linear-gradient(90deg,#e09b3d 40%,#d7263d 100%);
+        }
+        .navbar li:nth-child(4) .nav-btn {
+            background: linear-gradient(90deg,#d7263d 40%,#1e3c72 100%);
+        }
+        .nav-btn:hover, .nav-btn:focus {
+            background: #fff !important;
+            color: #181818 !important;
+            transform: scale(1.07);
+        }
+
+        main {
+            min-height: 80vh;
+        }
+
+        .services {
+            max-width: 800px;
+            margin: 48px auto 32px auto;
+            background: rgba(255,255,255,0.96);
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+            padding: 40px 32px;
+        }
+
+        .services h2 {
+            color: #e09b3d;
+            font-size: 2.2rem;
+            margin-bottom: 28px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .service-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f7f7f7;
+            margin-bottom: 18px;
+            padding: 20px 28px;
+            border-radius: 10px;
+            border-left: 6px solid #e09b3d;
+            font-size: 1.15rem;
+            box-shadow: 0 2px 8px rgba(224,155,61,0.07);
+            transition: box-shadow 0.2s;
+        }
+        .service-list li:hover {
+            box-shadow: 0 4px 16px rgba(224,155,61,0.18);
+        }
+        .service-list li:last-child {
+            margin-bottom: 0;
+        }
+        .service-name {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .service-price {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 1.1rem;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 0 auto 32px auto;
+            background: rgba(255,255,255,0.92);
+            border-radius: 16px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+            padding: 32px;
+        }
+        .about h2 {
+            color: #e09b3d;
+            font-size: 1.7rem;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .about p {
+            color: #181818;
+            font-size: 1.15rem;
+            text-align: center;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 32px 0 48px 0;
+        }
+        .book-btn {
+            background: linear-gradient(90deg,#e09b3d 40%,#1e3c72 100%);
+            color: #fff;
+            padding: 16px 40px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 2px 12px rgba(224,155,61,0.12);
+            border: none;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            display: inline-block;
+        }
+        .book-btn:hover, .book-btn:focus {
+            background: #1e3c72;
+            color: #fff;
+            transform: scale(1.06);
+        }
+
+        footer {
+            background: #111;
+            color: #e09b3d;
+            text-align: center;
+            padding: 22px 0;
+            border-top: 2px solid #e09b3d;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .services, .about {
+                max-width: 98vw;
+                padding: 18px;
+            }
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .services, .about {
+                padding: 12px;
+            }
+            .service-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px 12px;
+            }
+            .service-price {
+                margin-top: 8px;
+            }
+            .book-btn {
+                padding: 12px 18px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-scissors"></i> Cut Creators</h1>
+        <p>Your Premier Barbershop Experience</p>
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="index.html" class="nav-btn">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="service.html" class="nav-btn">
+                        <i class="fa-solid fa-list"></i> Services
+                    </a>
+                </li>
+                <li>
+                    <a href="Gallery.html" class="nav-btn">
+                        <i class="fa-solid fa-image"></i> Gallery
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-btn">
+                        <i class="fa-solid fa-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul class="service-list">
+                <li>
+                    <span class="service-name"><i class="fa-solid fa-user"></i> Haircut</span>
+                    <span class="service-price">$25</span>
+                </li>
+                <li>
+                    <span class="service-name"><i class="fa-solid fa-beard"></i> Beard Trim</span>
+                    <span class="service-price">$15</span>
+                </li>
+                <li>
+                    <span class="service-name"><i class="fa-solid fa-razor"></i> Shave</span>
+                    <span class="service-price">$20</span>
+                </li>
+                <li>
+                    <span class="service-name"><i class="fa-solid fa-palette"></i> Hair Color</span>
+                    <span class="service-price">$40</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="about">
+            <h2>Why Choose Us?</h2>
+            <p>
+                Our skilled barbers blend classic techniques with modern trends for your perfect look. Enjoy a relaxing atmosphere, premium products, and personalized service every visit. We value your time and style!
+            </p>
+        </section>
+
+        <section class="cta">
+            <a href="#" class="book-btn"><i class="fa-solid fa-calendar-check"></i> Book Appointment</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Cut Creators. All rights reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Gallery</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #fff 0%, #1976d2 50%, #e53935 100%);
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(90deg, #e53935 0%, #fff 50%, #1976d2 100%);
+            padding: 30px 0 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #1976d2;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            margin: 0;
+            font-weight: 700;
+            color: #e53935;
+            text-shadow: 2px 2px 8px #fff;
+        }
+
+        .gallery {
+            max-width: 900px;
+            margin: 40px auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(25, 118, 210, 0.2);
+            padding: 32px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 28px;
+            color: #1976d2;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(229, 57, 53, 0.2);
+            border: 3px solid #1976d2;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: #fff;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 32px rgba(25, 118, 210, 0.3);
+            border-color: #e53935;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            background: linear-gradient(90deg, #1976d2 0%, #fff 50%, #e53935 100%);
+            color: #222;
+            font-size: 1rem;
+            border-top: 2px solid #e53935;
+            margin-top: 40px;
+        }
+
+        .barber-icons {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .barber-icons i {
+            font-size: 2.2rem;
+            margin: 0 12px;
+            color: #1976d2;
+            filter: drop-shadow(0 2px 4px #fff);
+        }
+
+        nav ul li a {
+            color: #e53935 !important;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #1976d2 !important;
+        }
+    </style>
+    <nav>
+        <ul style="display: flex; justify-content: center; list-style: none; padding: 0; margin: 18px 0 0 0;">
+            <li style="margin: 0 18px;">
+                <a href="index.html">Home</a>
+            </li>
+            <li style="margin: 0 18px;">
+                <a href="service.html">Services</a>
+            </li>
+            <li style="margin: 0 18px;">
+                <a href="Gallery.html">Gallery</a>
+            </li>
+            <li style="margin: 0 18px;">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <header>
+        <div class="barber-icons">
+            <i class="fa-solid fa-scissors"></i>
+            <i class="fa-solid fa-razor"></i>
+            <i class="fa-solid fa-chair"></i>
+        </div>
+        <h1>Barbershop Gallery</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <h2>Our Work</h2>
+            <div class="gallery-grid">
+                <img src="vecteezy_ai-generated-a-black-and-white-photo-of-a-barber-cutting-a_35456757.jpg"
+                    alt="Classic Fade">
+                <img src="vecteezy_barber-chair-illustration-on-white-background-eps_56583075.jpg" alt="Beard Trim">
+                <img src="vecteezy_stylish-barber-backdrop-featuring-red-blue-and-gradient_58290154.jpg"
+                    alt="Modern Cut">
+                <img src="barberpole-Photoroom.png" alt="Hot Towel Shave">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span><i class="fa-solid fa-location-dot"></i> Jackson, MS</span> &nbsp; | &nbsp;
+        <span><i class="fa-solid fa-phone"></i> (555) 123-4567</span>
+        <br>
+        &copy; 2024 Barbershop. All rights reserved.
+    </footer>
+</body>
+
+</html>
